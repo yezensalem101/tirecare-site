@@ -3,7 +3,7 @@ export default function Page() {
   const googleReviewLink = "https://www.google.com/search?q=tire+care+mobile+service";
   const instagramLink = "https://instagram.com/tirecare_";
   const tiktokLink = "https://tiktok.com/@_tirecare";
-  const facebookLink = "https://facebook.com/search/top?q=tire%20care%20mobile%20service";
+  const facebookLink = "https://www.facebook.com/people/Tire-care-mobile-service/61581024939195/";
 
   const photos = [
     { src: "/images/job1.jpeg", title: "Roadside Tire Service" },
@@ -53,7 +53,7 @@ export default function Page() {
           <p style={styles.badge}>24/7 Roadside Tire Service • Tampa Bay & surrounding areas </p>
           <h1 style={styles.h1}>Tire problems? <span style={styles.orange}>We come to you.</span></h1>
           <p style={styles.heroP}>
-            Tire Care Mobile Service brings fast mobile tire repair, replacement, installation, balancing, and TPMS service straight to your location.
+            Tire Care Mobile Service provides fast, professional mobile tire repair, replacement, installation, balancing, and TPMS service directly at your location. Our experienced technicians are equipped to handle roadside emergencies, flat tires, tire changes, lockout assistance, fuel delivery, and more  saving you time and getting you back on the road safely. Whether you’re at home, work, stranded on the highway, or stuck in a parking lot, we bring reliable 24/7 roadside assistance and expert service straight to you across the Tampa Bay area.
           </p>
 
           <a href={googleReviewLink} target="_blank" style={styles.reviewBadge}>
