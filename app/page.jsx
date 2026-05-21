@@ -106,14 +106,14 @@ export default function Page() {
             <p style={styles.heroP}>We save you time by bringing the tire shop to your driveway, job, parking lot, or roadside location.</p>
           </div>
           <div style={styles.checkList}>
-            <div style={styles.check}>✅ Open 24/7</div>
-            <div style={styles.check}>✅ servicing tampa and surrounding areas</div>
-            <div style={styles.check}>✅ Fast, honest, professional mobile tire service</div>
-            <div style={styles.check}>✅ We bring the shop to you</div>
+            <div style={styles.check}>🕒Open 24/7</div>
+            <div style={styles.check}>📍 servicing tampa and surrounding areas</div>
+            <div style={styles.check}>🚨Fast, honest, professional mobile tire service & more</div>
+            <div style={styles.check}>🛠️We bring the shop to you</div>
+            <div style={styles.check}>🌏Areas service:Tampa • Wesley Chapel • New Tampa • Lutz • Land O’ Lakes • Clearwater • St. Petersburg • Brandon • Riverview • Town ‘N’ Country • Carrollwood • Temple Terrace • South Tampa • Ybor City • Citrus Park • Palm Harbor • Dunedin • Largo • Pinellas Park • Safety Harbor • Oldsmar • Odessa • Ruskin • Apollo Beach • Seffner • Valrico • Tarpon Springs • Spring Hill • Brooksville • Trinity • Zephyrhills • Plant City • Tampa Bay Area</div>
           </div>
         </div>
       </section>
-
       <section id="gallery" style={styles.section}>
         <div style={styles.sectionHead}>
           <h2 style={styles.h2}>Recent Jobs</h2>
