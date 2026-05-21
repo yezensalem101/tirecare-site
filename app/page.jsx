@@ -6,8 +6,8 @@ export default function Page() {
   const facebookLink = "https://www.facebook.com/people/Tire-care-mobile-service/61581024939195/";
 
   const photos = [
-    { src: "/images/job1.jpeg", title: "Roadside Tire Service" },
-    { src: "/images/job2.jpeg", title: "Premium Vehicle Service" },
+    { src: "/images/job2.jpeg", title: "Roadside Tire Service" },
+    { src: "/images/job1.jpeg", title: "Premium Vehicle Service" },
     { src: "/images/job3.jpeg", title: "Truck Tire Service" },
     { src: "/images/job4.jpeg", title: "Emergency Tire Help" },
     { src: "/images/job5.jpeg", title: "Install & Balance" },
