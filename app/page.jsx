@@ -50,7 +50,7 @@ export default function Page() {
 
       <section style={styles.hero}>
         <div style={styles.heroText}>
-          <p style={styles.badge}>24/7 Roadside Tire Service • Tampa Bay</p>
+          <p style={styles.badge}>24/7 Roadside Tire Service • Tampa Bay & surrounding areas </p>
           <h1 style={styles.h1}>Tire problems? <span style={styles.orange}>We come to you.</span></h1>
           <p style={styles.heroP}>
             Tire Care Mobile Service brings fast mobile tire repair, replacement, installation, balancing, and TPMS service straight to your location.
@@ -107,7 +107,7 @@ export default function Page() {
           </div>
           <div style={styles.checkList}>
             <div style={styles.check}>✅ Open 24/7</div>
-            <div style={styles.check}>✅ Tampa Bay Service Area</div>
+            <div style={styles.check}>✅ servicing tampa and surrounding areas</div>
             <div style={styles.check}>✅ Fast, honest, professional mobile tire service</div>
             <div style={styles.check}>✅ We bring the shop to you</div>
           </div>
