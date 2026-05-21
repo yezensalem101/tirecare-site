@@ -1,90 +1,97 @@
-import React from "react";
-import { Phone, MapPin, Clock, ShieldCheck, Star, Wrench, Truck, CheckCircle } from "lucide-react";
-
 export default function Page() {
   const phone = "813-648-0099";
-  const googleReviewLink = "https://www.google.com/search?q=tire+care+mobile+service";
+
+  const images = [
+    "/images/job1.jpeg",
+    "/images/job2.jpeg",
+    "/images/job3.jpeg",
+    "/images/job4.jpeg",
+    "/images/job5.jpeg",
+  ];
 
   return (
-    <main style={{ background: "#09090b", color: "white", minHeight: "100vh", fontFamily: "Arial, sans-serif" }}>
-      <a href={`tel:${phone}`} style={{ position: "fixed", bottom: 20, right: 20, zIndex: 50, background: "#f97316", color: "black", padding: "16px 24px", borderRadius: 999, fontWeight: 900, textDecoration: "none" }}>
-        📞 Call Now
+    <main style={{ background: "#202020", color: "white", fontFamily: "Arial, sans-serif", minHeight: "100vh" }}>
+      <div style={{ background: "#ffcc00", color: "#111", textAlign: "center", padding: 12, fontWeight: 900 }}>
+        24/7 Mobile Tire Service Available — Call Now: {phone}
+      </div>
+
+      <a href={`tel:${phone}`} style={{
+        position: "fixed", bottom: 20, right: 20, zIndex: 99,
+        background: "#ffcc00", color: "#111", padding: "16px 24px",
+        borderRadius: 14, fontWeight: 900, textDecoration: "none"
+      }}>
+        Book Service
       </a>
 
-      <section style={{ padding: "80px 24px", maxWidth: 1100, margin: "0 auto" }}>
-        <p style={{ color: "#fdba74", fontWeight: 700 }}>24/7 Roadside Tire Service • Tampa Bay</p>
-        <h1 style={{ fontSize: 56, lineHeight: 1.05, margin: "20px 0" }}>
-          Tire problems? <span style={{ color: "#fb923c" }}>We come to you.</span>
+      <section style={{ padding: "60px 22px", textAlign: "center" }}>
+        <h1 style={{ fontSize: 48, fontWeight: 900, marginBottom: 15 }}>
+          24/7 Mobile Tire Service
         </h1>
-        <p style={{ fontSize: 20, color: "#d4d4d8", maxWidth: 700 }}>
-          Tire Care Mobile Service brings fast mobile tire repair, replacement, installation, balancing, and TPMS service straight to your location.
+        <p style={{ fontSize: 20, color: "#ddd", maxWidth: 700, margin: "0 auto 30px" }}>
+          Tire problems? We bring the shop to you. Fast roadside tire repair, replacement, install, balance, and TPMS service across Tampa Bay.
         </p>
 
-        <a href={googleReviewLink} target="_blank" style={{ display: "inline-block", marginTop: 24, color: "#fdba74", fontWeight: 900, textDecoration: "none" }}>
-          ⭐⭐⭐⭐⭐ 158+ Five-Star Google Reviews
+        <a href={`tel:${phone}`} style={{
+          background: "#ffcc00", color: "#111", padding: "16px 55px",
+          borderRadius: 6, fontWeight: 900, textDecoration: "none", display: "inline-block"
+        }}>
+          CALL US
         </a>
 
-        <div style={{ marginTop: 32 }}>
-          <a href={`tel:${phone}`} style={{ background: "#f97316", color: "black", padding: "16px 24px", borderRadius: 16, fontWeight: 900, textDecoration: "none", marginRight: 12 }}>
-            Call Now: {phone}
-          </a>
-          <a href="#services" style={{ border: "1px solid #3f3f46", color: "white", padding: "16px 24px", borderRadius: 16, fontWeight: 900, textDecoration: "none" }}>
-            View Services
-          </a>
+        <div style={{ marginTop: 22 }}>
+          <a href="https://instagram.com/tirecare_" target="_blank" style={{ color: "#ffcc00", margin: 12 }}>Instagram</a>
+          <a href="https://tiktok.com/@_tirecare" target="_blank" style={{ color: "#ffcc00", margin: 12 }}>TikTok</a>
+          <a href="https://facebook.com/search/top?q=tire%20care%20mobile%20service" target="_blank" style={{ color: "#ffcc00", margin: 12 }}>Facebook</a>
         </div>
       </section>
 
-      <section id="services" style={{ padding: "60px 24px", maxWidth: 1100, margin: "0 auto" }}>
-        <h2 style={{ fontSize: 42, textAlign: "center" }}>Our Services</h2>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: 24, marginTop: 32 }}>
+      <section style={{ padding: "50px 22px" }}>
+        <h2 style={{ textAlign: "center", fontSize: 38, fontWeight: 900 }}>OUR SERVICES</h2>
+
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+          gap: 25,
+          maxWidth: 1100,
+          margin: "35px auto"
+        }}>
           {[
-            ["Tire Install & Balance", "Mobile tire installation and balancing at your location."],
-            ["Roadside Tire Service", "Flat tire, blowout, or emergency tire help when you need it."],
-            ["TPMS Sensor Service", "TPMS sensor replacement, diagnosis, and service."]
-          ].map(([title, text]) => (
-            <div key={title} style={{ background: "#18181b", padding: 28, borderRadius: 24, border: "1px solid #27272a" }}>
-              <h3 style={{ color: "#fb923c" }}>{title}</h3>
-              <p style={{ color: "#d4d4d8" }}>{text}</p>
+            ["Tire Replacement", images[0]],
+            ["Roadside Tire Service", images[1]],
+            ["Install & Balance", images[2]],
+            ["TPMS Sensor Service", images[3]],
+            ["Emergency Tire Help", images[4]],
+          ].map(([title, img]) => (
+            <div key={title} style={{ background: "#111", borderRadius: 8, overflow: "hidden" }}>
+              <img src={img} style={{ width: "100%", height: 260, objectFit: "cover" }} />
+              <div style={{ background: "#ffcc00", color: "#111", padding: 18, textAlign: "center", fontWeight: 900 }}>
+                {title}
+              </div>
             </div>
           ))}
         </div>
       </section>
 
-      <section style={{ padding: "60px 24px", background: "#18181b" }}>
-        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-          <h2 style={{ fontSize: 42 }}>Why Choose Tire Care?</h2>
-          <p style={{ color: "#d4d4d8", fontSize: 19 }}>
-            We save you time by bringing the tire shop to your driveway, job, parking lot, or roadside location.
-          </p>
-          <ul style={{ color: "#d4d4d8", fontSize: 18, lineHeight: 2 }}>
-            <li>✅ Open 24/7</li>
-            <li>✅ Serving Tampa, Wesley Chapel, Clearwater, St. Pete, and nearby areas</li>
-            <li>✅ Fast, honest, professional mobile tire service</li>
-          </ul>
-        </div>
+      <section style={{ padding: "50px 22px", textAlign: "center", background: "#181818" }}>
+        <h2 style={{ fontSize: 38, fontWeight: 900 }}>WHY CHOOSE TIRE CARE?</h2>
+        <p style={{ color: "#ddd", fontSize: 19 }}>Open 24/7 • Fast Response • Tampa Bay Service Area • 158+ Five-Star Google Reviews</p>
       </section>
 
-      <section style={{ padding: "70px 24px", maxWidth: 1100, margin: "0 auto", textAlign: "center" }}>
-        <div style={{ background: "linear-gradient(135deg, rgba(249,115,22,.25), #18181b)", padding: 40, borderRadius: 28, border: "1px solid rgba(249,115,22,.4)" }}>
-          <div style={{ fontSize: 34 }}>⭐⭐⭐⭐⭐</div>
-          <p style={{ color: "#fdba74", fontWeight: 900 }}>GOOGLE TRUSTED</p>
-          <h2 style={{ fontSize: 48 }}>158+ Five-Star Reviews</h2>
-          <p style={{ color: "#d4d4d8", fontSize: 19 }}>
-            Real customers trust Tire Care Mobile Service for fast, professional mobile tire help across Tampa Bay.
-          </p>
-          <a href={googleReviewLink} target="_blank" style={{ display: "inline-block", marginTop: 24, background: "#f97316", color: "black", padding: "16px 24px", borderRadius: 16, fontWeight: 900, textDecoration: "none" }}>
-            View Google Reviews
-          </a>
-        </div>
-      </section>
-
-      <section style={{ padding: "40px 24px 80px", textAlign: "center" }}>
-        <h2 style={{ fontSize: 42 }}>Need tire service today?</h2>
-        <p style={{ fontSize: 19 }}>Call Tire Care Mobile Service and we’ll bring the shop to you.</p>
-        <a href={`tel:${phone}`} style={{ display: "inline-block", background: "#f97316", color: "black", padding: "16px 28px", borderRadius: 16, fontWeight: 900, textDecoration: "none" }}>
-          {phone}
+      <section style={{ padding: "50px 22px", textAlign: "center" }}>
+        <h2 style={{ fontSize: 38, fontWeight: 900 }}>158+ FIVE-STAR REVIEWS</h2>
+        <p style={{ color: "#ddd", fontSize: 19 }}>
+          Real customers trust Tire Care Mobile Service for fast, professional mobile tire help.
+        </p>
+        <a href="https://www.google.com/search?q=tire+care+mobile+service" target="_blank" style={{ color: "#ffcc00", fontWeight: 900 }}>
+          View Google Reviews
         </a>
       </section>
+
+      <footer style={{ padding: 35, textAlign: "center", background: "#111", color: "#ccc" }}>
+        <h3 style={{ color: "#ffcc00" }}>Tire Care Mobile Service</h3>
+        <p>{phone}</p>
+        <p>Open 24/7 • Tampa Bay, FL</p>
+      </footer>
     </main>
   );
 }
