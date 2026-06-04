@@ -58,7 +58,7 @@ export default function Page() {
           </p>
 
           <a href={googleReviewLink} target="_blank" style={styles.reviewBadge}>
-            ⭐⭐⭐⭐⭐ <b>158+ Five-Star Google Reviews</b>
+            ⭐⭐⭐⭐⭐ <b>170+ Five-Star Google Reviews</b>
           </a>
 
           <div style={styles.heroButtons}>
