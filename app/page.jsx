@@ -133,7 +133,7 @@ export default function Page() {
       <section id="reviews" style={styles.reviewSection}>
         <div style={styles.stars}>⭐⭐⭐⭐⭐</div>
         <p style={styles.googleTrusted}>Google Trusted</p>
-        <h2 style={styles.bigReview}>158+ Five-Star Reviews</h2>
+        <h2 style={styles.bigReview}>170+ Five-Star Reviews</h2>
         <p style={styles.sectionP}>Real customers trust Tire Care Mobile Service for fast, professional mobile tire help across Tampa Bay.</p>
         <a href={googleReviewLink} target="_blank" style={styles.primaryBtn}>View Google Reviews</a>
       </section>
